@@ -5,8 +5,8 @@ from string import Template
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-MY_ADDRESS = 'udaychhina1337@gmail.com'
-PASSWORD = 'uIoP0(8&'
+MY_ADDRESS = 'your email'
+PASSWORD = 'your password'
 
 
 def get_contacts(contact):
@@ -37,7 +37,7 @@ def main():
     message_template = read_template('template.txt')
 
     # set up the SMTP server
-    s = smtplib.SMTP(host='smtp.gmail.com', port=587)
+    s = smtplib.SMTP(host='[search for the smtp server of your email provider]', port=587)
     s.starttls()
     s.login(MY_ADDRESS, PASSWORD)
 
